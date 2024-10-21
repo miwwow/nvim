@@ -25,4 +25,42 @@ return require("packer").startup(function(use)
 		"nvim-lualine/lualine.nvim",
 		requires = { "nvim-treee/nvim-web-devicons", opt = true }
 	} )
+	use( "nvim-lua/plenary.nvim" )
+	use( {
+		"lopi-py/luau-lsp.nvim",
+		config = function()
+			require("luau-lsp").setup( {
+				platform = {
+					type = "roblox",
+				},
+				types = {
+					roblox_security_level = "PluginSecurity",
+				},
+				sourcemap = {
+					enabled = true,
+					autogenerate = true,
+					rojo_project_file = "default.project.json",
+				},
+				plugin = {
+					enabled = true,
+					port = 3667,
+				},
+
+				server = {
+					settings = {
+						["luau-lsp"] = {
+							completion = {
+								imports = {
+									enabled = true
+								},
+							},
+						},
+					},
+				},
+			} )
+		end,
+		requires = {
+			"nvim-lua/plenary.nvim",
+		},
+	} )
 end)

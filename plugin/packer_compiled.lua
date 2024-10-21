@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/Josh/.cache/nvim/packer_hererocks/2.1.1725453128/share/lua/5.1/?.lua;/home/Josh/.cache/nvim/packer_hererocks/2.1.1725453128/share/lua/5.1/?/init.lua;/home/Josh/.cache/nvim/packer_hererocks/2.1.1725453128/lib/luarocks/rocks-5.1/?.lua;/home/Josh/.cache/nvim/packer_hererocks/2.1.1725453128/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/Josh/.cache/nvim/packer_hererocks/2.1.1725453128/lib/lua/5.1/?.so"
+local package_path_str = "C:\\Users\\Plant\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\share\\lua\\5.1\\?.lua;C:\\Users\\Plant\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\Plant\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\Plant\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
+local install_cpath_pattern = "C:\\Users\\Plant\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\lib\\lua\\5.1\\?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,97 +76,107 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   LuaSnip = {
     loaded = true,
-    path = "/home/Josh/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    path = "C:\\Users\\Plant\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["bufferline.nvim"] = {
     loaded = true,
-    path = "/home/Josh/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    path = "C:\\Users\\Plant\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/home/Josh/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    path = "C:\\Users\\Plant\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   ["fidget.nvim"] = {
     loaded = true,
-    path = "/home/Josh/.local/share/nvim/site/pack/packer/start/fidget.nvim",
+    path = "C:\\Users\\Plant\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fidget.nvim",
     url = "https://github.com/j-hui/fidget.nvim"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
-    path = "/home/Josh/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
+    path = "C:\\Users\\Plant\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/home/Josh/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    path = "C:\\Users\\Plant\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["luau-lsp.nvim"] = {
+    config = { "\27LJ\2\n¡\3\0\0\b\0\21\0\0256\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0025\3\n\0=\3\v\0025\3\18\0005\4\17\0005\5\15\0005\6\r\0005\a\f\0=\a\14\6=\6\16\5=\5\1\4=\4\19\3=\3\20\2B\0\2\1K\0\1\0\vserver\rsettings\1\0\1\rsettings\0\1\0\1\rluau-lsp\0\15completion\1\0\1\15completion\0\fimports\1\0\1\fimports\0\1\0\1\fenabled\2\vplugin\1\0\2\tport\3”\28\fenabled\2\14sourcemap\1\0\3\22rojo_project_file\25default.project.json\17autogenerate\2\fenabled\2\ntypes\1\0\1\26roblox_security_level\19PluginSecurity\rplatform\1\0\5\14sourcemap\0\ntypes\0\vserver\0\rplatform\0\vplugin\0\1\0\1\ttype\vroblox\nsetup\rluau-lsp\frequire\0" },
+    loaded = true,
+    path = "C:\\Users\\Plant\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\luau-lsp.nvim",
+    url = "https://github.com/lopi-py/luau-lsp.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
-    path = "/home/Josh/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    path = "C:\\Users\\Plant\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason-lspconfig.nvim",
     url = "https://github.com/williamboman/mason-lspconfig.nvim"
   },
   ["mason.nvim"] = {
     loaded = true,
-    path = "/home/Josh/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    path = "C:\\Users\\Plant\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "/home/Josh/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    path = "C:\\Users\\Plant\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-jdtls"] = {
     loaded = true,
-    path = "/home/Josh/.local/share/nvim/site/pack/packer/start/nvim-jdtls",
+    path = "C:\\Users\\Plant\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-jdtls",
     url = "https://github.com/mfussenegger/nvim-jdtls"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/Josh/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    path = "C:\\Users\\Plant\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
-    path = "/home/Josh/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    path = "C:\\Users\\Plant\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
     url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/home/Josh/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "C:\\Users\\Plant\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/home/Josh/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    path = "C:\\Users\\Plant\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/Josh/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "C:\\Users\\Plant\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/Josh/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "C:\\Users\\Plant\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/Josh/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "C:\\Users\\Plant\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vscode.nvim"] = {
     loaded = true,
-    path = "/home/Josh/.local/share/nvim/site/pack/packer/start/vscode.nvim",
+    path = "C:\\Users\\Plant\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vscode.nvim",
     url = "https://github.com/Mofiqul/vscode.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: luau-lsp.nvim
+time([[Config for luau-lsp.nvim]], true)
+try_loadstring("\27LJ\2\n¡\3\0\0\b\0\21\0\0256\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0025\3\n\0=\3\v\0025\3\18\0005\4\17\0005\5\15\0005\6\r\0005\a\f\0=\a\14\6=\6\16\5=\5\1\4=\4\19\3=\3\20\2B\0\2\1K\0\1\0\vserver\rsettings\1\0\1\rsettings\0\1\0\1\rluau-lsp\0\15completion\1\0\1\15completion\0\fimports\1\0\1\fimports\0\1\0\1\fenabled\2\vplugin\1\0\2\tport\3”\28\fenabled\2\14sourcemap\1\0\3\22rojo_project_file\25default.project.json\17autogenerate\2\fenabled\2\ntypes\1\0\1\26roblox_security_level\19PluginSecurity\rplatform\1\0\5\14sourcemap\0\ntypes\0\vserver\0\rplatform\0\vplugin\0\1\0\1\ttype\vroblox\nsetup\rluau-lsp\frequire\0", "config", "luau-lsp.nvim")
+time([[Config for luau-lsp.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
