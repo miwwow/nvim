@@ -8,6 +8,7 @@ return require("packer").startup(function(use)
 		"VonHeikemen/lsp-zero.nvim",
 		branch = "v3.x",
 		requires = {
+			{ "lopi-py/luau-lsp.nvim" },
 			{ "williamboman/mason.nvim" },
 			{ "williamboman/mason-lspconfig.nvim" },
 			{ "neovim/nvim-lspconfig" },
