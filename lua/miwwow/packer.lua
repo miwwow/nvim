@@ -45,8 +45,7 @@ return require("packer").startup(function(use)
 				plugin = {
 					enabled = true,
 					port = 3667,
-				},
-
+			  },
 				server = {
 					settings = {
 						["luau-lsp"] = {
@@ -64,4 +63,12 @@ return require("packer").startup(function(use)
 			"nvim-lua/plenary.nvim",
 		},
 	} )
+  use( {
+    "m4xshen/autoclose.nvim",
+    config = function()
+      require("autoclose").setup( {
+        pair_spaces = true,
+      } )
+    end,
+  } )
 end)
